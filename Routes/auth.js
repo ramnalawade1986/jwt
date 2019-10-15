@@ -8,7 +8,9 @@ const {
 } = require('../valiadation');
 
 
-
+router.get('/test', async(req,res)=>{
+    res.send('ok test');
+});
 router.post('/register', async (req, res) => {
     //validation
     const {
