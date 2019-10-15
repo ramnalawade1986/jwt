@@ -8,7 +8,7 @@ const postroute = require('./Routes/posts');
 dotenv.config();
 //connect db
 mongoose
-    .connect(process.env.DB_CONNECT, {
+    .connect(mongodb://localhost:27017/test, {
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
